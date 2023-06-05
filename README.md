@@ -1,6 +1,8 @@
 # PythonWalmartLogin
 import pandas as pd
+
 from selenium import webdriver
+
 from selenium.webdriver.common.keys import Keys
 
 login_url = "https://www.walmart.com/account/login"
@@ -30,7 +32,9 @@ driver.implicitly_wait(10)
 
 
 search_box = driver.find_element_by_id("global-search-input")
+
 search_box.send_keys(item)
+
 search_box.send_keys(Keys.RETURN)
 
 driver.implicitly_wait(10)
